@@ -1,0 +1,13 @@
+<h3>Buscador</h3>
+<input type="text" id="buscarWiki"/>
+<input type="submit" (click)="buscarWiki()"/>
+
+<!--MOSTRAR RESULTADOS DE BUSQUEDA-->
+<ul *ngFor="let wikipedia of wiki[1]">
+    <li (click)="verContribuidores(wikipedia)">{{wikipedia}}</li>
+</ul>
+
+<!--MOSTRAR CONTRIBUIDORES-->
+<ul ngFor="let contribuidor of contribuidores">
+    
+</ul>
